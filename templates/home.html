@@ -1,0 +1,21 @@
+<html>
+    <body bgcolor=#FFCCCB>
+
+        <center>
+
+        <h1> <u>FAKE NEWS DETECTION </u></h1><br>
+        
+        <form method="POST", action="{{url_for('home')}}">
+           <b> ENTER NEWS ARTICLE :  <input type="text", name='news', placeholder="Enter NEWS"> <br><br><br></b>
+   
+            <button type="submit"> NEWS_PREDICTION</button>
+        </form>
+
+        <h3>{{ prediction_news }}</h3>
+
+        <img src='static\NEWS.jpg' alt="NEWS">
+        
+    </center>
+
+    </body>
+</html>
